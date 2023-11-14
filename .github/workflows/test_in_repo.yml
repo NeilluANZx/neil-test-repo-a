@@ -4,4 +4,4 @@ on:
 
 jobs:
     test-job:
-        uses: ./.github/workflows/test.yml@main
+        uses: ./.github/workflows/test.yml
