@@ -9,4 +9,7 @@ jobs:
         environment: dev
         steps:
             - name: Test step
-              run: echo "Hello world"
+              run: |
+                echo ${{ github.event.repository.name }}
+                echo ${{ github.ref_name }}
+                echo ${{ github.repository }}
