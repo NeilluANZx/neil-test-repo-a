@@ -1,0 +1,7 @@
+name: another test workflow
+on:
+    push:
+
+jobs:
+    test-job:
+        uses: ./.github/workflows/test.yml@main
