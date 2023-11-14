@@ -5,3 +5,4 @@ on:
 jobs:
     test-job:
         uses: ./.github/workflows/test.yml
+        environment: test
