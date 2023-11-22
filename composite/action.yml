@@ -12,10 +12,9 @@ runs:
           run: |
             echo $GITHUB_ACTION_PATH
         - name: Setup Python
-          uses: anzx/cosmos-github-actions/setup-python@main
+          uses: actions/setup-python@v4
           with:
             python-version: '3.x'
-            setup-poetry: 'true'
         - name: run script
           shell: bash
           run: |
