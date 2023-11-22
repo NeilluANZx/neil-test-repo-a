@@ -1,0 +1,13 @@
+name: Test workflow
+
+inputs:
+    test:
+        required: false
+
+runs:
+    using: "composite"
+    steps:
+        - name: testing
+          shell: bash
+          run: |
+            echo $GITHUB_ACTION_PATH
